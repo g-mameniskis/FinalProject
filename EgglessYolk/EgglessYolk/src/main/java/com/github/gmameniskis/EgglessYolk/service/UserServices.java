@@ -15,11 +15,11 @@ public class UserServices {
         this.userRepository = repository;
     }
 
-    public User findById(UUID ) {
-
-    }
-
-    public User findByUserName() {
-        this.userRepository =
-    }
+//    public User findById(UUID ) {
+//
+//    }
+//
+//    public User findByUserName() {
+//        this.userRepository =
+//    }
 }
