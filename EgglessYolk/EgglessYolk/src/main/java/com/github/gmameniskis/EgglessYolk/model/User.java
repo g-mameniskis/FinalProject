@@ -9,35 +9,45 @@ public class User {
 
     @Id private UUID userId = UUID.randomUUID();
 
-    private String firstName;
-    private String lastName;
     private String userName;
+    private String password;
 
-    public String getUserName() {
-        return userName;
+    public User() {
+
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "userId=" + userId +
+                ", userName='" + userName + '\'' +
+                ", password='" + password + '\'' +
+                '}';
+    }
+
+    public User(UUID userId, String userName, String password) {
+        this.userId = userId;
+        this.userName = userName;
+        this.password = password;
     }
 
     public UUID getUserId() {
         return userId;
     }
 
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public String getUserName() {
+        return userName;
     }
 
     public void setUserName(String userName) {
         this.userName = userName;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }

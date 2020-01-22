@@ -19,10 +19,18 @@ public class UserController {
     }
 
     @RequestMapping("/")
-    public ModelAndView home(User user) {
+    public ModelAndView home() {
         ModelAndView mv = new ModelAndView();
-        mv.addObject("user", user);
+//        mv.addObject("user", user);
         mv.setViewName("home");
+        return mv;
+    }
+
+    @RequestMapping("/addBook")
+    public ModelAndView addBook(String bookTitle, String authorFirstName, String authorLastName) {
+        System.out.println("BookTitle: " + bookTitle);
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("addBook");
         return mv;
     }
 }
