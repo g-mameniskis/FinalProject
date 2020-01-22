@@ -12,6 +12,4 @@ import java.util.UUID;
 //public interface UserRepository extends CrudRepository<User, UUID> {
 public interface UserRepository extends JpaRepository<User, UUID> {
     List<User> findByUserName(String userName);
-
-//    List<User> findByUserName();
 }
