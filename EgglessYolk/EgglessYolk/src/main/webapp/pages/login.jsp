@@ -4,15 +4,13 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>AddBook.jsp</title>
+    <title>Login.jsp</title>
 </head>
 <body>
 
-${newUser.getUserName()
-<form action="addBook">
-<label> bookTitle: </label> <input type="text" name="bookTitle"><br>
-<label> authorFirstName: </label> <input type="text" name="authorFirstName"><br>
-<label> authorLastName: </label> <input type="text" name="authorLastName"><br>
+<form action="verifyInfo">
+<label> Username: </label> <input type="text" name="userName"><br>
+<label> Password: </label> <input type="text" name="password"><br>
     <input type="submit"><br>
 </form>
 </body>

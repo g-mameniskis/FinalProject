@@ -25,8 +25,7 @@ public class User {
                 '}';
     }
 
-    public User(UUID userId, String userName, String password) {
-        this.userId = userId;
+    public User(String userName, String password) {
         this.userName = userName;
         this.password = password;
     }
